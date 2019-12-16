@@ -1,5 +1,12 @@
-<button
-  type="button"
-  (click)="btnClick('Select')">
-  Select
-</button>
+
+
+<ul>
+  <li *ngFor="let key of keys">
+    <button
+      type="button"
+      (click)="btnClick(key)"
+    >
+      {{ key }}
+  </button>
+  </li>
+</ul>

@@ -8,6 +8,34 @@ import { RokuService } from '../services/roku.service';
 })
 export class RemoteComponent implements OnInit {
 
+  public keys = [
+    'home',
+    'rev',
+    'fwd',
+    'play',
+    'select',
+    'left',
+    'right',
+    'down',
+    'up',
+    'back',
+    'replay',
+    'info',
+    'backspace',
+    'enter',
+    'volumeDown',
+    'volumeUp',
+    'volumeMute',
+    'inputTuner',
+    'inputHDMI1',
+    'inputHDMI2',
+    'inputHDMI3',
+    'inputHDMI4',
+    'inputAV1',
+    'channelUp',
+    'channelDown'
+  ];
+
   constructor(
     private rokuService: RokuService
   ) { }
