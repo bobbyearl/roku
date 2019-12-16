@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RokuService } from './services/roku.service';
 import { RemoteComponent } from './remote/remote.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RemoteComponent
+    RemoteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
