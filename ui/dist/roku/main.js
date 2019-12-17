@@ -408,7 +408,7 @@ __webpack_require__.r(__webpack_exports__);
 var RokuService = /** @class */ (function () {
     function RokuService(httpClient) {
         this.httpClient = httpClient;
-        this.base = 'http://localhost:3000/api/';
+        this.base = 'http://192.168.1.5/api/';
     }
     RokuService.prototype.getTVs = function () {
         return this.httpClient

@@ -16,7 +16,7 @@ import {
 
 @Injectable()
 export class RokuService {
-  private base = 'http://localhost:3000/api/';
+  private base = 'http://192.168.1.5/api/';
 
   constructor(
     private httpClient: HttpClient
