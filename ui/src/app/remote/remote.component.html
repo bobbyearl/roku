@@ -1,12 +1,139 @@
+<mat-grid-list
+  cols="1"
+  [rowHeight]="rowHeight"
+>
+  <mat-grid-tile>
+    <mat-form-field>
+      <mat-label>TV</mat-label>
+      <mat-select [(value)]="selectedId">
+        <mat-option *ngFor="let tv of tvs" 
+          [value]="tv.id"
+        >
+          {{ tv.name }} ({{ tv.value }})
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-grid-tile>
+</mat-grid-list>
 
+<mat-divider></mat-divider>
 
-<ul>
-  <li *ngFor="let key of keys">
+<mat-grid-list 
+  cols="3"
+  [rowHeight]="rowHeight"
+>
+  <mat-grid-tile>
     <button
+      mat-flat-button
       type="button"
+      color="primary"
+      (click)="btnClick('back')"
+    >
+      Back
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('*')"
+    >
+      *
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('home')"
+    >
+      Home
+    </button>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-divider></mat-divider>
+
+<mat-grid-list 
+  cols="3"
+  [rowHeight]="rowHeight"
+>
+  <mat-grid-tile>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('up')"
+    >
+      Up
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('left')"
+    >
+      Left
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('select')"
+    >
+      OK
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('right')"
+    >
+      Right
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('down')"
+    >
+      Down
+    </button>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-divider></mat-divider>
+
+<mat-grid-list 
+  cols="8"
+  [rowHeight]="rowHeight"
+>
+  <mat-grid-tile *ngFor="let key of keys">
+    <button
+      mat-flat-button
+      type="button"
+      color="basic"
       (click)="btnClick(key)"
     >
       {{ key }}
-  </button>
-  </li>
-</ul>
+    </button>
+  </mat-grid-tile>
+</mat-grid-list>
+

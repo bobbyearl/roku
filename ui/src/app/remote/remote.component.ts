@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 import { RokuService } from '../services/roku.service';
+import { TV } from '../models/tv.model';
 
 @Component({
   selector: 'app-remote',
@@ -34,21 +36,48 @@ export class RemoteComponent implements OnInit {
     'inputAV1',
     'channelUp',
     'channelDown'
-  ];
+  ].sort();
 
-  constructor(
+  public tvs: TV[];
+
+  public selectedId: number;
+
+  public duration = 3000;
+
+  public rowHeight = 80;
+
+  constructor (
+    private snackBar: MatSnackBar,
     private rokuService: RokuService
-  ) { }
+  ) {
+    this.rokuService
+      .getTVs()
+      .subscribe(tvs => this.tvs = tvs);
+  }
 
   ngOnInit() { }
 
   public btnClick(key: string) {
-    console.log('button', key);
     this.rokuService
-      .sendKey(key)
-      .subscribe(() => {
-        console.log('done');
-      });
+      .sendKey(this.selectedId, key)
+      .subscribe(
+        (response: any) => {
+          if (response.error) {
+            this.snackBar
+              .open(
+                `Handled API error: ${response.error}`,
+                'OK',
+                { duration: this.duration }
+              );
+          }
+        },
+        err => this.snackBar
+          .open(
+            `Fatal Error\n${err}`,
+            'OK',
+            { duration: this.duration }
+          )
+      );
   }
 
 }

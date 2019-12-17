@@ -76,7 +76,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\n"
+module.exports = "<router-outlet class=\"mat-typography\"></router-outlet>\n"
 
 /***/ }),
 
@@ -135,13 +135,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _services_roku_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./services/roku.service */ "./src/app/services/roku.service.ts");
-/* harmony import */ var _remote_remote_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./remote/remote.component */ "./src/app/remote/remote.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _services_roku_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./services/roku.service */ "./src/app/services/roku.service.ts");
+/* harmony import */ var _remote_remote_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./remote/remote.component */ "./src/app/remote/remote.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/grid-list */ "./node_modules/@angular/material/esm5/grid-list.es5.js");
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm5/select.es5.js");
+/* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/snack-bar */ "./node_modules/@angular/material/esm5/snack-bar.es5.js");
+/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm5/divider.es5.js");
+
+
+
+
+
+
 
 
 
@@ -155,21 +167,27 @@ var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-                _remote_remote_component__WEBPACK_IMPORTED_MODULE_7__["RemoteComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+                _remote_remote_component__WEBPACK_IMPORTED_MODULE_8__["RemoteComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
+                _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"],
+                _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_11__["MatGridListModule"],
+                _angular_material_select__WEBPACK_IMPORTED_MODULE_12__["MatSelectModule"],
+                _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_13__["MatSnackBarModule"],
+                _angular_material_divider__WEBPACK_IMPORTED_MODULE_14__["MatDividerModule"]
             ],
             providers: [
-                _services_roku_service__WEBPACK_IMPORTED_MODULE_6__["RokuService"]
+                _services_roku_service__WEBPACK_IMPORTED_MODULE_7__["RokuService"]
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -242,7 +260,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n\n<ul>\n  <li *ngFor=\"let key of keys\">\n    <button\n      type=\"button\"\n      (click)=\"btnClick(key)\"\n    >\n      {{ key }}\n  </button>\n  </li>\n</ul>\n"
+module.exports = "<mat-grid-list\n  cols=\"1\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile>\n    <mat-form-field>\n      <mat-label>TV</mat-label>\n      <mat-select [(value)]=\"selectedId\">\n        <mat-option *ngFor=\"let tv of tvs\" \n          [value]=\"tv.id\"\n        >\n          {{ tv.name }} ({{ tv.value }})\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('back')\"\n    >\n      Back\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('*')\"\n    >\n      *\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('home')\"\n    >\n      Home\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('up')\"\n    >\n      Up\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('left')\"\n    >\n      Left\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('select')\"\n    >\n      OK\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('right')\"\n    >\n      Right\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('down')\"\n    >\n      Down\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"8\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile *ngFor=\"let key of keys\">\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"basic\"\n      (click)=\"btnClick(key)\"\n    >\n      {{ key }}\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n"
 
 /***/ }),
 
@@ -253,7 +271,7 @@ module.exports = "\n\n<ul>\n  <li *ngFor=\"let key of keys\">\n    <button\n    
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3JlbW90ZS9yZW1vdGUuY29tcG9uZW50LnNjc3MifQ== */"
+module.exports = "button {\n  font-variant: small-caps;\n  margin: 6px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ib2JieS5lYXJsL0dpdEh1Yi9yb2t1L3VpL3NyYy9hcHAvcmVtb3RlL3JlbW90ZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHdCQUF3QjtFQUN4QixXQUFXLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9yZW1vdGUvcmVtb3RlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYnV0dG9uIHtcbiAgZm9udC12YXJpYW50OiBzbWFsbC1jYXBzO1xuICBtYXJnaW46IDZweDtcbn0iXX0= */"
 
 /***/ }),
 
@@ -269,12 +287,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RemoteComponent", function() { return RemoteComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _services_roku_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/roku.service */ "./src/app/services/roku.service.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _services_roku_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services/roku.service */ "./src/app/services/roku.service.ts");
+
 
 
 
 var RemoteComponent = /** @class */ (function () {
-    function RemoteComponent(rokuService) {
+    function RemoteComponent(snackBar, rokuService) {
+        var _this = this;
+        this.snackBar = snackBar;
         this.rokuService = rokuService;
         this.keys = [
             'home',
@@ -302,16 +324,25 @@ var RemoteComponent = /** @class */ (function () {
             'inputAV1',
             'channelUp',
             'channelDown'
-        ];
+        ].sort();
+        this.duration = 3000;
+        this.rowHeight = 80;
+        this.rokuService
+            .getTVs()
+            .subscribe(function (tvs) { return _this.tvs = tvs; });
     }
     RemoteComponent.prototype.ngOnInit = function () { };
     RemoteComponent.prototype.btnClick = function (key) {
-        console.log('button', key);
+        var _this = this;
         this.rokuService
-            .sendKey(key)
-            .subscribe(function () {
-            console.log('done');
-        });
+            .sendKey(this.selectedId, key)
+            .subscribe(function (response) {
+            if (response.error) {
+                _this.snackBar
+                    .open("Handled API error: " + response.error, 'OK', { duration: _this.duration });
+            }
+        }, function (err) { return _this.snackBar
+            .open("Fatal Error\n" + err, 'OK', { duration: _this.duration }); });
     };
     RemoteComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -319,7 +350,8 @@ var RemoteComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./remote.component.html */ "./src/app/remote/remote.component.html"),
             styles: [__webpack_require__(/*! ./remote.component.scss */ "./src/app/remote/remote.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_roku_service__WEBPACK_IMPORTED_MODULE_2__["RokuService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"],
+            _services_roku_service__WEBPACK_IMPORTED_MODULE_3__["RokuService"]])
     ], RemoteComponent);
     return RemoteComponent;
 }());
@@ -347,9 +379,15 @@ __webpack_require__.r(__webpack_exports__);
 var RokuService = /** @class */ (function () {
     function RokuService(httpClient) {
         this.httpClient = httpClient;
+        this.base = 'http://localhost:3000/api/';
     }
-    RokuService.prototype.sendKey = function (key) {
-        return this.httpClient.post("http://localhost:3000/api/" + key, {});
+    RokuService.prototype.getTVs = function () {
+        return this.httpClient
+            .get(this.base + "tvs");
+    };
+    RokuService.prototype.sendKey = function (tvId, key) {
+        return this.httpClient
+            .post(this.base + "tvs/" + tvId + "/keypress/" + key, {});
     };
     RokuService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])(),
@@ -399,18 +437,21 @@ var environment = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
-/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
-/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
 
 
 
 
-if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].production) {
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["enableProdMode"])();
 }
-Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
     .catch(function (err) { return console.error(err); });
 
 
