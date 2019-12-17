@@ -99,7 +99,7 @@ export class RemoteComponent implements OnInit {
         },
         err => this.snackBar
           .open(
-            `Fatal Error\n${err}`,
+            `Fatal Error\n${JSON.stringify(err)}`,
             'OK',
             { duration: this.duration }
           )
