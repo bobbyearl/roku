@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material';
 import { RokuService } from '../services/roku.service';
 import { TV } from '../models/tv.model';
@@ -38,6 +38,15 @@ export class RemoteComponent implements OnInit {
     'channelDown'
   ].sort();
 
+  private keyCodeMap = {
+    left: 'ArrowLeft',
+    up: 'ArrowUp',
+    right: 'ArrowRight',
+    down: 'ArrowDown',
+    play: 'Space',
+    select: 'Enter'
+  };
+
   public tvs: TV[];
 
   public selectedId: number;
@@ -52,12 +61,29 @@ export class RemoteComponent implements OnInit {
   ) {
     this.rokuService
       .getTVs()
-      .subscribe(tvs => this.tvs = tvs);
+      .subscribe(tvs => {
+        this.tvs = tvs;
+        this.selectedId = this.tvs[0].id;
+      });
   }
 
   ngOnInit() { }
 
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    Object.keys(this.keyCodeMap).some(name => {
+      if (this.keyCodeMap[name] === event.code) {
+        this.sendKey(name);
+        return true;
+      }
+    });
+  }
+
   public btnClick(key: string) {
+    this.sendKey(key);
+  }
+
+  private sendKey(key: string) {
     this.rokuService
       .sendKey(this.selectedId, key)
       .subscribe(

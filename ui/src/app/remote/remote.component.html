@@ -1,5 +1,5 @@
 <mat-grid-list
-  cols="1"
+  cols="3"
   [rowHeight]="rowHeight"
 >
   <mat-grid-tile>
@@ -13,6 +13,26 @@
         </mat-option>
       </mat-select>
     </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('volumeDown')"
+    >
+      &#8609;
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('volumeUp')"
+    >
+    &#8607;
+    </button>
   </mat-grid-tile>
 </mat-grid-list>
 
@@ -60,20 +80,19 @@
   cols="3"
   [rowHeight]="rowHeight"
 >
-  <mat-grid-tile>
-  </mat-grid-tile>
-  <mat-grid-tile>
+  <mat-grid-tile
+    colspan="3"
+  >
     <button
       mat-flat-button
       type="button"
       color="primary"
       (click)="btnClick('up')"
     >
-      Up
+      &#8679;
     </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-  </mat-grid-tile>
+  </mat-grid-tile
+  >
   <mat-grid-tile>
     <button
       mat-flat-button
@@ -81,7 +100,7 @@
       color="primary"
       (click)="btnClick('left')"
     >
-      Left
+      &#8678;
     </button>
   </mat-grid-tile>
   <mat-grid-tile>
@@ -101,20 +120,57 @@
       color="primary"
       (click)="btnClick('right')"
     >
-      Right
+      &#8680;
     </button>
   </mat-grid-tile>
-  <mat-grid-tile>
-
-  </mat-grid-tile>
-  <mat-grid-tile>
+  <mat-grid-tile
+    colspan="3"
+  >
     <button
       mat-flat-button
       type="button"
       color="primary"
       (click)="btnClick('down')"
     >
-      Down
+      &#8681;
+    </button>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-divider></mat-divider>
+
+<mat-grid-list 
+  cols="3"
+  [rowHeight]="rowHeight"
+>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('rev')"
+    >
+      &#10558;
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('play')"
+    >
+      Play/Pause
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="primary"
+      (click)="btnClick('fwd')"
+    >
+      &#10559;
     </button>
   </mat-grid-tile>
 </mat-grid-list>
