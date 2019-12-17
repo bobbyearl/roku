@@ -7,10 +7,8 @@ const app = express();
 
 const tv = '192.168.1.80';
 const port = process.env.PORT || 3000;
-const staticPath = path.resolve('../ui/dist/roku');
+const staticPath = path.resolve(__dirname, '../ui/dist/roku');
 const staticFile = path.join(staticPath, 'index.html');
-
-console.log(staticPath);
 
 app.use(cors());
 
