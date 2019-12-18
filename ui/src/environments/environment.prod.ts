@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  bff: 'http://192.168.1.5/api/'
 };

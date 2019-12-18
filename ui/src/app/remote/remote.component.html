@@ -1,37 +1,46 @@
+<mat-form-field>
+  <mat-label>TV</mat-label>
+  <mat-select [(value)]="selectedId">
+    <mat-option *ngFor="let tv of tvs" 
+      [value]="tv.id"
+    >
+      {{ tv.name }} - {{ tv.value }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
 <mat-grid-list
   cols="3"
   [rowHeight]="rowHeight"
 >
   <mat-grid-tile>
-    <mat-form-field>
-      <mat-label>TV</mat-label>
-      <mat-select [(value)]="selectedId">
-        <mat-option *ngFor="let tv of tvs" 
-          [value]="tv.id"
-        >
-          {{ tv.name }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-  </mat-grid-tile>
-  <mat-grid-tile>
     <button
       mat-flat-button
       type="button"
-      color="primary"
+      color="accent"
       (click)="btnClick('volumeDown')"
     >
-      &#8609;
+      <i class="fa-lg fas fa-volume-down"></i>
     </button>
   </mat-grid-tile>
   <mat-grid-tile>
     <button
       mat-flat-button
       type="button"
-      color="primary"
+      color="accent"
       (click)="btnClick('volumeUp')"
     >
-    &#8607;
+      <i class="fa-lg fas fa-volume-up"></i>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-flat-button
+      type="button"
+      color="accent"
+      (click)="btnClick('volumeMute')"
+    >
+      <i class="fa-lg fas fa-volume-mute"></i>
     </button>
   </mat-grid-tile>
 </mat-grid-list>
@@ -49,7 +58,7 @@
       color="primary"
       (click)="btnClick('back')"
     >
-      Back
+      <i class="fa-lg far fa-hand-point-left"></i>
     </button>
   </mat-grid-tile>
   <mat-grid-tile>
@@ -59,7 +68,7 @@
       color="primary"
       (click)="btnClick('*')"
     >
-      *
+      <i class="fa-lg fas fa-asterisk"></i>
     </button>
   </mat-grid-tile>
   <mat-grid-tile>
@@ -69,7 +78,7 @@
       color="primary"
       (click)="btnClick('home')"
     >
-      Home
+      <i class="fa-lg fas fa-home"></i>
     </button>
   </mat-grid-tile>
 </mat-grid-list>
@@ -89,7 +98,7 @@
       color="primary"
       (click)="btnClick('up')"
     >
-      &#8679;
+      <i class="fa-2x fas fa-arrow-up"></i>
     </button>
   </mat-grid-tile
   >
@@ -100,7 +109,7 @@
       color="primary"
       (click)="btnClick('left')"
     >
-      &#8678;
+      <i class="fa-2x fas fa-arrow-left"></i>
     </button>
   </mat-grid-tile>
   <mat-grid-tile>
@@ -120,7 +129,7 @@
       color="primary"
       (click)="btnClick('right')"
     >
-      &#8680;
+      <i class="fa-2x fas fa-arrow-right"></i>
     </button>
   </mat-grid-tile>
   <mat-grid-tile
@@ -132,7 +141,7 @@
       color="primary"
       (click)="btnClick('down')"
     >
-      &#8681;
+      <i class="fa-2x fas fa-arrow-down"></i>
     </button>
   </mat-grid-tile>
 </mat-grid-list>
@@ -150,7 +159,7 @@
       color="primary"
       (click)="btnClick('rev')"
     >
-      &#10558;
+      <i class="fa-lg fas fa-backward"></i>
     </button>
   </mat-grid-tile>
   <mat-grid-tile>
@@ -160,7 +169,7 @@
       color="primary"
       (click)="btnClick('play')"
     >
-      Play/Pause
+    <i class="fa-lg fas fa-play"></i>&nbsp;<i class="fa-lg fas fa-pause"></i>
     </button>
   </mat-grid-tile>
   <mat-grid-tile>
@@ -170,26 +179,34 @@
       color="primary"
       (click)="btnClick('fwd')"
     >
-      &#10559;
+      <i class="fa-lg fas fa-forward"></i>
     </button>
   </mat-grid-tile>
 </mat-grid-list>
 
-<mat-divider></mat-divider>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        All Actions
+      </mat-panel-title>
+    </mat-expansion-panel-header>
 
-<mat-grid-list 
-  cols="4"
-  [rowHeight]="rowHeight"
->
-  <mat-grid-tile *ngFor="let key of keys">
-    <button
-      mat-flat-button
-      type="button"
-      color="basic"
-      (click)="btnClick(key)"
+    <mat-grid-list 
+      cols="3"
+      [rowHeight]="rowHeight"
     >
-      {{ key }}
-    </button>
-  </mat-grid-tile>
-</mat-grid-list>
+    <mat-grid-tile *ngFor="let key of keys">
+      <button
+        mat-flat-button
+        type="button"
+        color="basic"
+        (click)="btnClick(key)"
+      >
+        {{ key }}
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  </mat-expansion-panel>
 

@@ -11,12 +11,16 @@ import {
 } from 'rxjs';
 
 import {
+  environment
+} from '../../environments/environment';
+
+import {
   TV
 } from '../models/tv.model';
 
 @Injectable()
 export class RokuService {
-  private base = 'http://192.168.1.5/api/';
+  private base = environment.bff;
 
   constructor(
     private httpClient: HttpClient

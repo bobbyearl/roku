@@ -23,6 +23,54 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./src/app/app-material.module.ts":
+/*!****************************************!*\
+  !*** ./src/app/app-material.module.ts ***!
+  \****************************************/
+/*! exports provided: AppMaterialModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppMaterialModule", function() { return AppMaterialModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material/grid-list */ "./node_modules/@angular/material/esm5/grid-list.es5.js");
+/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm5/select.es5.js");
+/* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material/snack-bar */ "./node_modules/@angular/material/esm5/snack-bar.es5.js");
+/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm5/divider.es5.js");
+/* harmony import */ var _angular_material_expansion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/expansion */ "./node_modules/@angular/material/esm5/expansion.es5.js");
+
+
+
+
+
+
+
+
+var AppMaterialModule = /** @class */ (function () {
+    function AppMaterialModule() {
+    }
+    AppMaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            exports: [
+                _angular_material_button__WEBPACK_IMPORTED_MODULE_2__["MatButtonModule"],
+                _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_3__["MatGridListModule"],
+                _angular_material_select__WEBPACK_IMPORTED_MODULE_4__["MatSelectModule"],
+                _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_5__["MatSnackBarModule"],
+                _angular_material_divider__WEBPACK_IMPORTED_MODULE_6__["MatDividerModule"],
+                _angular_material_expansion__WEBPACK_IMPORTED_MODULE_7__["MatExpansionModule"]
+            ]
+        })
+    ], AppMaterialModule);
+    return AppMaterialModule;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/app-routing.module.ts":
 /*!***************************************!*\
   !*** ./src/app/app-routing.module.ts ***!
@@ -139,19 +187,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _services_roku_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./services/roku.service */ "./src/app/services/roku.service.ts");
-/* harmony import */ var _remote_remote_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./remote/remote.component */ "./src/app/remote/remote.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _angular_material_button__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material/button */ "./node_modules/@angular/material/esm5/button.es5.js");
-/* harmony import */ var _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material/grid-list */ "./node_modules/@angular/material/esm5/grid-list.es5.js");
-/* harmony import */ var _angular_material_select__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/material/select */ "./node_modules/@angular/material/esm5/select.es5.js");
-/* harmony import */ var _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/material/snack-bar */ "./node_modules/@angular/material/esm5/snack-bar.es5.js");
-/* harmony import */ var _angular_material_divider__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/material/divider */ "./node_modules/@angular/material/esm5/divider.es5.js");
-
-
-
-
+/* harmony import */ var _app_material_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-material.module */ "./src/app/app-material.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _services_roku_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./services/roku.service */ "./src/app/services/roku.service.ts");
+/* harmony import */ var _remote_remote_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./remote/remote.component */ "./src/app/remote/remote.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 
 
 
@@ -169,25 +209,21 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
-                _remote_remote_component__WEBPACK_IMPORTED_MODULE_8__["RemoteComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
+                _remote_remote_component__WEBPACK_IMPORTED_MODULE_9__["RemoteComponent"],
+                _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
-                _angular_material_button__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"],
-                _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_11__["MatGridListModule"],
-                _angular_material_select__WEBPACK_IMPORTED_MODULE_12__["MatSelectModule"],
-                _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_13__["MatSnackBarModule"],
-                _angular_material_divider__WEBPACK_IMPORTED_MODULE_14__["MatDividerModule"]
+                _app_material_module__WEBPACK_IMPORTED_MODULE_6__["AppMaterialModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"]
             ],
             providers: [
-                _services_roku_service__WEBPACK_IMPORTED_MODULE_7__["RokuService"]
+                _services_roku_service__WEBPACK_IMPORTED_MODULE_8__["RokuService"]
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -260,7 +296,7 @@ var HomeComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-grid-list\n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile>\n    <mat-form-field>\n      <mat-label>TV</mat-label>\n      <mat-select [(value)]=\"selectedId\">\n        <mat-option *ngFor=\"let tv of tvs\" \n          [value]=\"tv.id\"\n        >\n          {{ tv.name }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('volumeDown')\"\n    >\n      &#8609;\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('volumeUp')\"\n    >\n    &#8607;\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('back')\"\n    >\n      Back\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('*')\"\n    >\n      *\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('home')\"\n    >\n      Home\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile\n    colspan=\"3\"\n  >\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('up')\"\n    >\n      &#8679;\n    </button>\n  </mat-grid-tile\n  >\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('left')\"\n    >\n      &#8678;\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('select')\"\n    >\n      OK\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('right')\"\n    >\n      &#8680;\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile\n    colspan=\"3\"\n  >\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('down')\"\n    >\n      &#8681;\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('rev')\"\n    >\n      &#10558;\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('play')\"\n    >\n      Play/Pause\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('fwd')\"\n    >\n      &#10559;\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"4\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile *ngFor=\"let key of keys\">\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"basic\"\n      (click)=\"btnClick(key)\"\n    >\n      {{ key }}\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n"
+module.exports = "<mat-form-field>\n  <mat-label>TV</mat-label>\n  <mat-select [(value)]=\"selectedId\">\n    <mat-option *ngFor=\"let tv of tvs\" \n      [value]=\"tv.id\"\n    >\n      {{ tv.name }} - {{ tv.value }}\n    </mat-option>\n  </mat-select>\n</mat-form-field>\n\n<mat-grid-list\n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"accent\"\n      (click)=\"btnClick('volumeDown')\"\n    >\n      <i class=\"fa-lg fas fa-volume-down\"></i>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"accent\"\n      (click)=\"btnClick('volumeUp')\"\n    >\n      <i class=\"fa-lg fas fa-volume-up\"></i>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"accent\"\n      (click)=\"btnClick('volumeMute')\"\n    >\n      <i class=\"fa-lg fas fa-volume-mute\"></i>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('back')\"\n    >\n      <i class=\"fa-lg far fa-hand-point-left\"></i>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('*')\"\n    >\n      <i class=\"fa-lg fas fa-asterisk\"></i>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('home')\"\n    >\n      <i class=\"fa-lg fas fa-home\"></i>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile\n    colspan=\"3\"\n  >\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('up')\"\n    >\n      <i class=\"fa-2x fas fa-arrow-up\"></i>\n    </button>\n  </mat-grid-tile\n  >\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('left')\"\n    >\n      <i class=\"fa-2x fas fa-arrow-left\"></i>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('select')\"\n    >\n      OK\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('right')\"\n    >\n      <i class=\"fa-2x fas fa-arrow-right\"></i>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile\n    colspan=\"3\"\n  >\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('down')\"\n    >\n      <i class=\"fa-2x fas fa-arrow-down\"></i>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-divider></mat-divider>\n\n<mat-grid-list \n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('rev')\"\n    >\n      <i class=\"fa-lg fas fa-backward\"></i>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('play')\"\n    >\n    <i class=\"fa-lg fas fa-play\"></i>&nbsp;<i class=\"fa-lg fas fa-pause\"></i>\n    </button>\n  </mat-grid-tile>\n  <mat-grid-tile>\n    <button\n      mat-flat-button\n      type=\"button\"\n      color=\"primary\"\n      (click)=\"btnClick('fwd')\"\n    >\n      <i class=\"fa-lg fas fa-forward\"></i>\n    </button>\n  </mat-grid-tile>\n</mat-grid-list>\n\n<mat-accordion>\n  <mat-expansion-panel>\n    <mat-expansion-panel-header>\n      <mat-panel-title>\n        All Actions\n      </mat-panel-title>\n    </mat-expansion-panel-header>\n\n    <mat-grid-list \n      cols=\"3\"\n      [rowHeight]=\"rowHeight\"\n    >\n    <mat-grid-tile *ngFor=\"let key of keys\">\n      <button\n        mat-flat-button\n        type=\"button\"\n        color=\"basic\"\n        (click)=\"btnClick(key)\"\n      >\n        {{ key }}\n      </button>\n    </mat-grid-tile>\n  </mat-grid-list>\n\n  </mat-expansion-panel>\n\n"
 
 /***/ }),
 
@@ -271,7 +307,7 @@ module.exports = "<mat-grid-list\n  cols=\"3\"\n  [rowHeight]=\"rowHeight\"\n>\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "button {\n  font-variant: small-caps;\n  margin: 6px; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ib2JieS5lYXJsL0dpdEh1Yi9yb2t1L3VpL3NyYy9hcHAvcmVtb3RlL3JlbW90ZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHdCQUF3QjtFQUN4QixXQUFXLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9yZW1vdGUvcmVtb3RlLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYnV0dG9uIHtcbiAgZm9udC12YXJpYW50OiBzbWFsbC1jYXBzO1xuICBtYXJnaW46IDZweDtcbn0iXX0= */"
+module.exports = "mat-form-field {\n  width: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9ib2JieS5lYXJsL0dpdEh1Yi9yb2t1L3VpL3NyYy9hcHAvcmVtb3RlL3JlbW90ZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVcsRUFBQSIsImZpbGUiOiJzcmMvYXBwL3JlbW90ZS9yZW1vdGUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJtYXQtZm9ybS1maWVsZCB7XG4gIHdpZHRoOiAxMDAlO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -402,13 +438,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+
 
 
 
 var RokuService = /** @class */ (function () {
     function RokuService(httpClient) {
         this.httpClient = httpClient;
-        this.base = 'http://192.168.1.5/api/';
+        this.base = _environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].bff;
     }
     RokuService.prototype.getTVs = function () {
         return this.httpClient
@@ -443,7 +481,8 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 var environment = {
-    production: false
+    production: false,
+    bff: 'http://localhost:3000/api/'
 };
 /*
  * For easier debugging in development mode, you can import the following file
