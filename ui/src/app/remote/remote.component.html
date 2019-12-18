@@ -1,47 +1,30 @@
-<mat-form-field>
-  <mat-label>TV</mat-label>
-  <mat-select [(value)]="selectedId">
-    <mat-option *ngFor="let tv of tvs" 
-      [value]="tv.id"
-    >
-      {{ tv.name }} - {{ tv.value }}
-    </mat-option>
-  </mat-select>
-</mat-form-field>
-
 <mat-grid-list
-  cols="3"
+  cols="4"
   [rowHeight]="rowHeight"
 >
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
-      color="accent"
-      (click)="btnClick('volumeDown')"
+      color="warn"
+      (click)="btnClick('power')"
     >
-      <i class="fa-lg fas fa-volume-down"></i>
+      <i class="fa-lg fas fa-power-off"></i>
     </button>
   </mat-grid-tile>
-  <mat-grid-tile>
-    <button
-      mat-flat-button
-      type="button"
-      color="accent"
-      (click)="btnClick('volumeUp')"
-    >
-      <i class="fa-lg fas fa-volume-up"></i>
-    </button>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <button
-      mat-flat-button
-      type="button"
-      color="accent"
-      (click)="btnClick('volumeMute')"
-    >
-      <i class="fa-lg fas fa-volume-mute"></i>
-    </button>
+  <mat-grid-tile
+    colspan="3"
+  >
+    <mat-form-field>
+      <mat-label>TV</mat-label>
+      <mat-select [(value)]="selectedId">
+        <mat-option *ngFor="let tv of tvs" 
+          [value]="tv.id"
+        >
+          {{ tv.name }} - {{ tv.value }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
   </mat-grid-tile>
 </mat-grid-list>
 
@@ -53,17 +36,17 @@
 >
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
       color="primary"
       (click)="btnClick('back')"
     >
-      <i class="fa-lg far fa-hand-point-left"></i>
+      <i class="fa-lg fas fa-backspace"></i>
     </button>
   </mat-grid-tile>
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
       color="primary"
       (click)="btnClick('*')"
@@ -73,7 +56,7 @@
   </mat-grid-tile>
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
       color="primary"
       (click)="btnClick('home')"
@@ -93,7 +76,7 @@
     colspan="3"
   >
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
       color="primary"
       (click)="btnClick('up')"
@@ -104,7 +87,7 @@
   >
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
       color="primary"
       (click)="btnClick('left')"
@@ -114,7 +97,7 @@
   </mat-grid-tile>
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
       color="primary"
       (click)="btnClick('select')"
@@ -124,7 +107,7 @@
   </mat-grid-tile>
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
       color="primary"
       (click)="btnClick('right')"
@@ -136,7 +119,7 @@
     colspan="3"
   >
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
       color="primary"
       (click)="btnClick('down')"
@@ -154,9 +137,8 @@
 >
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
-      color="primary"
       (click)="btnClick('rev')"
     >
       <i class="fa-lg fas fa-backward"></i>
@@ -164,9 +146,8 @@
   </mat-grid-tile>
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
-      color="primary"
       (click)="btnClick('play')"
     >
     <i class="fa-lg fas fa-play"></i>&nbsp;<i class="fa-lg fas fa-pause"></i>
@@ -174,15 +155,47 @@
   </mat-grid-tile>
   <mat-grid-tile>
     <button
-      mat-flat-button
+      mat-raised-button
       type="button"
-      color="primary"
       (click)="btnClick('fwd')"
     >
       <i class="fa-lg fas fa-forward"></i>
     </button>
   </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-raised-button
+      type="button"
+      (click)="btnClick('volumeDown')"
+    >
+      <i class="fa-lg fas fa-volume-down"></i>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-raised-button
+      type="button"
+      (click)="btnClick('volumeUp')"
+    >
+      <i class="fa-lg fas fa-volume-up"></i>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-raised-button
+      type="button"
+      (click)="btnClick('volumeMute')"
+    >
+      <i class="fa-lg fas fa-volume-mute"></i>
+    </button>
+  </mat-grid-tile>
 </mat-grid-list>
+
+<mat-form-field class="example-full-width">
+  <input 
+    matInput
+    placeholder="Keyboard">
+</mat-form-field>
 
 <mat-accordion>
   <mat-expansion-panel>
@@ -198,7 +211,7 @@
     >
     <mat-grid-tile *ngFor="let key of keys">
       <button
-        mat-flat-button
+        mat-raised-button
         type="button"
         color="basic"
         (click)="btnClick(key)"

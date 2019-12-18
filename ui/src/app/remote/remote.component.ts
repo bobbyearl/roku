@@ -38,45 +38,44 @@ export class RemoteComponent implements OnInit {
     'channelDown'
   ].sort();
 
-  private keyCodeMap = {
-    left: 'ArrowLeft',
-    up: 'ArrowUp',
-    right: 'ArrowRight',
-    down: 'ArrowDown',
-    play: 'Space',
-    select: 'Enter'
-  };
-
   public tvs: TV[];
 
   public selectedId: number;
 
-  public duration = 3000;
-
   public rowHeight = 80;
 
-  constructor (
+
+  private keyCodeMap = {
+    'ArrowLeft': 'left',
+    'ArrowUp': 'up',
+    'ArrowRight': 'right',
+    'ArrowDown': 'down',
+    ' ': 'play',
+    'Enter': 'select'
+  };
+
+  constructor(
     private snackBar: MatSnackBar,
     private rokuService: RokuService
   ) {
     this.rokuService
       .getTVs()
-      .subscribe(tvs => {
-        this.tvs = tvs;
-        this.selectedId = this.tvs[0].id;
-      });
+      .subscribe(
+        tvs => {
+          this.tvs = tvs;
+          this.selectedId = this.tvs[0].id;
+        },
+        err => this.showError(err.message)
+      );
   }
 
   ngOnInit() { }
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    Object.keys(this.keyCodeMap).some(name => {
-      if (this.keyCodeMap[name] === event.code) {
-        this.sendKey(name);
-        return true;
-      }
-    });
+    console.log(event);
+    const key = this.keyCodeMap[event.key] ? this.keyCodeMap[event.key] : event.key;
+    this.sendKey(key);
   }
 
   public btnClick(key: string) {
@@ -89,20 +88,21 @@ export class RemoteComponent implements OnInit {
       .subscribe(
         (response: any) => {
           if (response.error) {
-            this.snackBar
-              .open(
-                `Handled API error: ${response.error}`,
-                'OK',
-                { duration: this.duration }
-              );
+            this.showError(response.error);
           }
         },
-        err => this.snackBar
-          .open(
-            `Fatal Error\n${JSON.stringify(err)}`,
-            'OK',
-            { duration: this.duration }
-          )
+        err => this.showError(err.message)
+      );
+  }
+
+  private showError(message: string) {
+    this.snackBar
+      .open(
+        message,
+        'OK',
+        {
+          duration: 5000
+        }
       );
   }
 

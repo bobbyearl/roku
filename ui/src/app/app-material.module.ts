@@ -6,6 +6,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   exports: [
@@ -14,7 +15,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatSelectModule,
     MatSnackBarModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatInputModule
   ]
 })
 export class AppMaterialModule { }
