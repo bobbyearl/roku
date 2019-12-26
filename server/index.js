@@ -7,6 +7,10 @@ const app = express();
 
 const tvs = [
   {
+    name: 'Big Living Room',
+    value: '192.168.1.89'
+  },
+  {
     name: 'Living Room',
     value: '192.168.1.80'
   },
