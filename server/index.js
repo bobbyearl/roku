@@ -11,7 +11,7 @@ const tvs = [
     value: '192.168.1.89'
   },
   {
-    name: 'Living Room',
+    name: 'Master Bedroom',
     value: '192.168.1.80'
   },
   {
