@@ -18,7 +18,7 @@
     <mat-form-field>
       <mat-label>TV</mat-label>
       <mat-select [(value)]="selectedId">
-        <mat-option *ngFor="let tv of tvs" 
+        <mat-option *ngFor="let tv of tvs"
           [value]="tv.id"
         >
           {{ tv.name }} - {{ tv.value }}
@@ -30,7 +30,7 @@
 
 <mat-divider></mat-divider>
 
-<mat-grid-list 
+<mat-grid-list
   cols="3"
   [rowHeight]="rowHeight"
 >
@@ -68,7 +68,7 @@
 
 <mat-divider></mat-divider>
 
-<mat-grid-list 
+<mat-grid-list
   cols="3"
   [rowHeight]="rowHeight"
 >
@@ -131,7 +131,7 @@
 
 <mat-divider></mat-divider>
 
-<mat-grid-list 
+<mat-grid-list
   cols="3"
   [rowHeight]="rowHeight"
 >
@@ -166,6 +166,15 @@
     <button
       mat-raised-button
       type="button"
+      (click)="btnClick('volumeMute')"
+    >
+      <i class="fa-lg fas fa-volume-mute"></i>
+    </button>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <button
+      mat-raised-button
+      type="button"
       (click)="btnClick('volumeDown')"
     >
       <i class="fa-lg fas fa-volume-down"></i>
@@ -180,19 +189,10 @@
       <i class="fa-lg fas fa-volume-up"></i>
     </button>
   </mat-grid-tile>
-  <mat-grid-tile>
-    <button
-      mat-raised-button
-      type="button"
-      (click)="btnClick('volumeMute')"
-    >
-      <i class="fa-lg fas fa-volume-mute"></i>
-    </button>
-  </mat-grid-tile>
 </mat-grid-list>
 
 <mat-form-field class="example-full-width">
-  <input 
+  <input
     matInput
     placeholder="Keyboard">
 </mat-form-field>
@@ -205,7 +205,7 @@
       </mat-panel-title>
     </mat-expansion-panel-header>
 
-    <mat-grid-list 
+    <mat-grid-list
       cols="3"
       [rowHeight]="rowHeight"
     >
