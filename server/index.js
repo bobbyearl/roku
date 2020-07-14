@@ -8,15 +8,19 @@ const app = express();
 const tvs = [
   {
     name: 'Living Room',
-    value: '192.168.1.89'
+    value: '192.168.4.44'
   },
   {
     name: 'Carport',
-    value: '192.168.1.173'
+    value: '192.168.4.32'
   },
   {
     name: 'Reeves',
-    value: '192.168.1.139'
+    value: '192.168.4.50'
+  },
+  {
+    name: 'William',
+    value: '192.168.4.23'
   }
 ].map((tv, idx) => {
   tv.id = idx;
