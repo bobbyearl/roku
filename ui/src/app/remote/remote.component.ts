@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { RokuService } from '../services/roku.service';
 import { TV } from '../models/tv.model';
 
@@ -43,7 +43,6 @@ export class RemoteComponent implements OnInit {
   public selectedId: number;
 
   public rowHeight = 80;
-
 
   private keyCodeMap = {
     'ArrowLeft': 'left',
