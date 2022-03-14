@@ -12,11 +12,11 @@ const tvs = [
   },
   {
     name: 'Carport',
-    value: '192.168.4.32'
+    value: '192.168.4.78'
   },
   {
     name: 'Reeves',
-    value: '192.168.4.50'
+    value: '192.168.4.77'
   },
   {
     name: 'William',
