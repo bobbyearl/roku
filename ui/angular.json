@@ -123,7 +123,6 @@
       }
     }
   },
-  "defaultProject": "roku",
   "cli": {
     "analytics": "6fe9c626-b72a-4f02-bff3-4b06cb06ff13"
   }
