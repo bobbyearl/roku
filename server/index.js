@@ -27,7 +27,7 @@ const tvs = [
   return tv;
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 80;
 const staticPath = path.resolve(__dirname, '../ui/dist/roku');
 const staticFile = path.join(staticPath, 'index.html');
 
